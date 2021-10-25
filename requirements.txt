@@ -50,7 +50,6 @@ pycodestyle-magic==0.5
 pycosat==0.6.3
 pycurl==7.43.0.6
 pyflakes==2.3.1
-pyodbc===4.0.0-unsupported
 pyreadline==2.1
 pytest==6.2.3
 pywin32==227
