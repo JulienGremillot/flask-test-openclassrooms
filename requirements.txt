@@ -60,7 +60,6 @@ scikit-image==0.18.1
 scikit-multilearn==0.2.0
 selenium==4.0.0
 simplegeneric==0.8.1
-sip==4.19.13
 smart-open==5.2.1
 statsmodels==0.12.2
 tables==3.6.1
