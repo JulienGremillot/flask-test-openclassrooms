@@ -10,6 +10,7 @@ class Gender(enum.Enum):
     female = 0
     male = 1
     other = 2
+    undefined = 3
 
 
 class Content(db.Model):
@@ -28,5 +29,7 @@ def init_db():
     db.create_all()
     db.session.add(Content("THIS IS SPARTAAAAAAA!!!", Gender['male']))
     db.session.add(Content("What's your favorite scary movie?", Gender['female']))
+    db.session.add(Content("You are not what you think you are", Gender['other']))
+    db.session.add(Content("I don't believe in random", Gender['undefined']))
     db.session.commit()
     lg.warning('Database initialized!')
