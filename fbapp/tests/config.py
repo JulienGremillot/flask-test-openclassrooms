@@ -9,7 +9,7 @@ if os.environ.get('DATABASE_URL') is None:
     # id de l'app TEST
     FB_APP_ID = 12345678901234567890
 else:
-    SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
+    SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL'].replace('postgres://', 'postgresql://')
     FB_APP_ID = 869310400439313
 
 # Active le debogueur
